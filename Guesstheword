@@ -1,25 +1,25 @@
-# Import the random module to mix the secret words
+# Import the random module to mix the secret words.
 import random  
 
-# Array of word to use for the guessing game
+# Array of word to use for the guessing game.
 word = ["technology", "chatbot", "resume", "website", "router", "switch", "laptop", "code"]
 
-# Picks a random word from the array
+# Picks a random word from the array.
 secret_word = random.choice(word)
 
-# Creates a integer that counts the length of secret work and turns it into dashes
+# Creates a integer that counts the length of secret word and turns it into dashes.
 dashes = "-" * len(secret_word)
 
-# Function to retrieve a valid guess from the user
+# Function that prompts user for a guess.
 def get_guess():
     while True:
-        guess = input("Guess: ")
-        if len(guess) == 1 and guess.islower():
-            return guess
+        guess = input("Enter a letter to guess the word: ")  #turn user inmput into guess variable.
+        if len(guess) == 1 and guess.islower():  
+            return guess   #If user enters a single character and it is lowercase, it will return the guessed word.
         else:
-            print("Invalid input. Please enter exactly one lowercase letter.")
+            print("Invalid input. Please enter a lowercase letter.")  #If nont, then it will output this and try again.
 
-# Function to update the dashes based on the guess
+# Function that shows the correct letters after they are guessed.
 def update_dashes(secret_word, current_dashes, guess):
     result = ""
     for i in range(len(secret_word)):
