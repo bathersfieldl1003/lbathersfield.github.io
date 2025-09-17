@@ -1,10 +1,11 @@
-import random  # Import the random module
+# Import the random module to mix the secret words
+import random  
 
-# List of possible secret words
-words = ["technology", "chatbot", "resume", "website", "router", "switch", "laptop", "code"]
+# Array of word to use for the guessing game
+word = ["technology", "chatbot", "resume", "website", "router", "switch", "laptop", "code"]
 
 # Choose a random word from the list
-secret_word = random.choice(words)
+secret_word = random.choice(word)
 
 # Create the initial dashes string
 dashes = "-" * len(secret_word)
