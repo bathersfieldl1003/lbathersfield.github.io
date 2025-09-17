@@ -4,10 +4,10 @@ import random
 # Array of word to use for the guessing game
 word = ["technology", "chatbot", "resume", "website", "router", "switch", "laptop", "code"]
 
-# Choose a random word from the list
+# Picks a random word from the array
 secret_word = random.choice(word)
 
-# Create the initial dashes string
+# Creates a integer that counts the length of secret work and turns it into dashes
 dashes = "-" * len(secret_word)
 
 # Function to retrieve a valid guess from the user
