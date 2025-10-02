@@ -1,7 +1,7 @@
 # Import the random module to mix the secret words.
 import random  
 
-# Array of word to use for the guessing game.
+# Array of words to use for the guessing game.
 word = ["technology", "chatbot", "resume", "website", "router", "switch", "laptop", "code"]
 
 # Picks a random word from the array.
